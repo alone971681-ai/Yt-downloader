@@ -1,12 +1,14 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "composite": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": true,
-    "outDir": "dist",
-    "rootDir": "src",
-    "lib": ["dom", "es2022"]
+    "isolatedModules": true,
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "jsx": "preserve"
   },
   "include": ["src"]
 }
